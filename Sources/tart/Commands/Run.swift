@@ -13,10 +13,12 @@ struct Run: AsyncParsableCommand {
 
   @Flag var noGraphics: Bool = false
 
+  @Flag var withSoftnet: Bool = false
+
   @MainActor
   func run() async throws {
     let vmDir = try VMStorageLocal().open(name)
-    vm = try VM(vmDir: vmDir)
+    vm = try VM(vmDir: vmDir, withSoftnet: withSoftnet)
 
     Task {
       do {
