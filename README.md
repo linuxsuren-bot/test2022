@@ -14,8 +14,6 @@ tart clone ghcr.io/cirruslabs/macos-monterey-base:latest monterey-base
 tart run monterey-base
 ```
 
-![tart VM view app](Resources/TartScreenshot.png)
-
 ## CI Integration
 
 Tart itself is only responsible for managing virtual machines, but we've built Tart support into a tool called Cirrus CLI
