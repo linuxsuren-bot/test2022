@@ -1,5 +1,3 @@
-![Tart – open source virtualization for your automation needs](Resources/TartSocial.png)
-
 *Tart* is a virtualization toolset to build, run and manage virtual machines on Apple Silicon.
 Built by CI engineers for your automation needs. Here are some highlights of Tart:
 
@@ -70,7 +68,6 @@ tart run monterey-vanilla
 After the initial booting of the VM you'll need to manually go through the macOS installation process. As a convention we recommend creating an `admin` user with an `admin` password. After the regular installation please do some additional modifications in the VM:
 
 1. Enable Auto-Login. Users & Groups -> Login Options -> Automatic login -> admin.
-2. Allow SSH. Sharing -> Remote Login
 3. Disable Lock Screen. Preferences -> Lock Screen -> disable "Require Password" after 5.
 4. Disable Screen Saver.
 5. Run `sudo visudo` in Terminal, find `%admin ALL=(ALL) ALL` add `admin ALL=(ALL) NOPASSWD: ALL` to allow sudo without a password.
